@@ -1,0 +1,125 @@
+# 模型文件 - 训练生成的大文件
+models/
+!models/README.md
+!models/.gitkeep
+
+# 训练数据集 - 大型数据集文件
+training/dataset/lfw-deepfunneled/
+training/scripts/models/
+!training/scripts/models/.gitkeep
+
+# Python相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyTorch模型文件
+*.pth
+*.pt
+*.ckpt
+
+# TensorFlow模型文件
+*.h5
+*.hdf5
+saved_model/
+*.pb
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 环境变量和配置
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+config_local.py
+
+# IDE配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 日志文件
+*.log
+logs/
+*.log.*
+
+# 临时文件
+*.tmp
+*.temp
+.cache/
+temp/
+
+# 数据库文件（本地SQLite，如果使用的话）
+*.db
+*.sqlite
+*.sqlite3
+
+# 大文件和数据
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# 用户上传的临时图片文件
+uploads/
+temp_images/
+
+# 机器学习相关
+wandb/
+.neptune/
+mlruns/
+.mlflow/
+
+# 特定项目临时文件
+face_encodings.pkl
+user_photos/
+attendance_records.xlsx
+training_logs/
+
+# AWS和云部署相关
+.aws/
+*.pem
+*.key
+
+# 文档视频文件（太大）
+docs/*.mp4
+docs/*.avi
+docs/*.mov
+
+# 但保留PDF文档
+!docs/*.pdf

@@ -1,0 +1,135 @@
+/* 设置全局字体和布局 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 主页按钮横向排列，并放大 */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f2f2f2;
+}
+
+
+/* 让 Name, Student ID, Email 标签在输入框左侧，并居中 */
+.register-input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* 放大字体 */
+.register-input-group label {
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px; /* 固定宽度，让输入框对齐 */
+    text-align: right;
+    margin-right: 10px;
+}
+
+.register-input-group input {
+    font-size: 18px;
+    padding: 8px;
+    width: 50%;
+    text-align: center;
+}
+
+/* 上传文件 & 注册按钮在同一行 */
+.file-register-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/* 让摄像头画面和拍摄图像并排显示 */
+.camera-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+video, canvas {
+    width: 45%;
+    max-width: 600px;
+    border: 2px solid white;
+}
+
+
+/* 让考勤记录表格居中显示 */
+.attendance-table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* 设置表格样式 */
+.attendance-table {
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* 增加表格列间距 */
+.attendance-table th, .attendance-table td {
+    padding: 15px 30px; /* 增加单元格内间距 */
+    border: 1px solid black;
+}
+
+/* 设置表头背景颜色 */
+.attendance-table th {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+}
+
+/* 交替行颜色 */
+.attendance-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* 增加表格与按钮的间距 */
+.export-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* 增加按钮与表格的间距 */
+}
+
+
+/* 所有按钮和边框设为白色 */
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #f2f2f2;
+}

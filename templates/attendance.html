@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Attendance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Take Attendance</h1>
+
+    <button id="toggleCamera" onclick="toggleCamera()">Turn Camera On</button>
+
+    <div class="camera-container">
+        <video id="camera" autoplay style="display: none;"></video>
+        <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+
+    <button id="captureButton" onclick="capturePhoto()" style="display: none;">Capture Photo</button>
+    <button id="uploadButton" onclick="uploadAttendance()" style="display: none;">Upload Attendance</button>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
+
